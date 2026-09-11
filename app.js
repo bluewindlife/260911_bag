@@ -13,29 +13,28 @@
       brand: 'OPAQUE.CLIP',
       title: '9ポケット トートバッグ',
       code: 'C71-16003',
-      color: 'Black（現在使用中） / Beige（本命色）',
+      color: 'Black（使用中） / Beige',
       weight: 490,
       url: 'https://wear.jp/item/66671652/',
       images: [
         {
-          label: '単品｜ベージュ',
+          label: 'ベージュ単品',
           alt: 'OPAQUE.CLIP C71-16003 ベージュ 単品写真',
           sources: ['https://c.imgz.jp/228/71141228/71141228b_14_d_500.jpg']
         },
         {
-          label: '持ったとき',
+          label: '着用イメージ',
           alt: 'OPAQUE.CLIP C71-16003 着用イメージ',
           sources: ['https://images.wear2.jp/coordinate/Grigl5lv/gOgdabfF/1691473894_276.jpg']
         },
         {
-          label: '現在｜ブラック',
+          label: 'ブラック単品',
           alt: 'OPAQUE.CLIP C71-16003 ブラック 単品写真',
           sources: ['https://c.imgz.jp/228/71141228/71141228b_8_d_500.jpg']
         }
       ],
-      reason: '妻の第一希望。「今のバッグのベージュ版が良い」が明確なので、型番単位では最優先。軽量化はしませんが、見た目と使い勝手の失敗リスクが最も低い候補です。',
-      good: 'A4対応、マチ15cm、9ポケット。今と同じ収納・取り回しを維持したまま色だけ変えられます。',
-      concern: '重量は今と同じ約490g。軽量化を目的にするなら他型番が有利です。'
+      good: 'A4 / マチ15cm / 9ポケット。現在と同じ収納力。',
+      concern: '490g。ベージュに替えても軽量化はなし。'
     },
     {
       rank: 2,
@@ -53,14 +52,13 @@
           sources: ['https://c.imgz.jp/436/67358436/67358436_b_22_500.jpg']
         },
         {
-          label: '持ったとき',
+          label: '着用イメージ',
           alt: 'OPAQUE.CLIP C71-15002 ベージュ 着用イメージ',
           sources: ['https://c.imgz.jp/436/67358436/67358436_14_d_500.jpg']
         }
       ],
-      reason: '今のバッグに近い柔らかなシュリンク合皮トートで、現行より60g軽量。見た目を大きく変えずに少し軽くしたい条件に素直に合います。',
-      good: 'A4対応、肩掛け可能、マチ12cm。中央ファスナー＋内ポケット4つで、通勤用途との相性が良好。',
-      concern: '旧モデルのため、気に入った場合は新品在庫・中古・後継品を探す前提です。'
+      good: '430g / A4 / マチ12cm / 中央ファスナー / 内ポケット4。',
+      concern: '旧モデル。購入時は在庫確認。'
     },
     {
       rank: 3,
@@ -78,14 +76,13 @@
           sources: ['https://c.imgz.jp/538/86692538/86692538_2_d_500.jpg']
         },
         {
-          label: '持ったとき',
+          label: '着用イメージ',
           alt: 'OPAQUE.CLIP C71-19033 着用イメージ',
           sources: ['https://images.wear2.jp/coordinate/7qxo0t/20250131161559329/20250131161559329_276.jpg']
         }
       ],
-      reason: '現行より90g軽く、A4対応とマチ13.5cmを確保。軽量化と通勤バッグらしい上品さのバランスが良い候補です。',
-      good: '3層構造で仕分けしやすく、持ち手上がり27cmで肩掛けしやすい設計です。',
-      concern: '今のバッグより横幅がやや広め。実際に肩に掛けたときの見え方は確認したいところです。'
+      good: '400g / A4 / マチ13.5cm / 3層構造。',
+      concern: '現行より横幅が広め。'
     },
     {
       rank: 4,
@@ -106,7 +103,7 @@
           ]
         },
         {
-          label: '持ったとき',
+          label: '着用イメージ',
           alt: 'SHOO・LA・RUE C70-07026 ベージュ 着用イメージ',
           sources: [
             'https://store.world.co.jp/img/item/BRC70/BRC7026F0081/BRC7026F0081_l2_c102.jpg',
@@ -114,9 +111,8 @@
           ]
         }
       ],
-      reason: '現行より100g軽量で、A4・マチ11.5cm・肩掛けを確保。価格も比較的抑えめで、軽さと実用性を優先するなら強い候補です。',
-      good: '約390g、持ち手上がり27.5cm。メイン収納の前後にも収納部があり仕事用に使いやすい構成です。',
-      concern: '今のバッグよりボックス感が強く、かわいさの方向が合うかは画像での確認が重要です。'
+      good: '390g / A4 / マチ11.5cm / 肩掛け。',
+      concern: '現行よりボックス型。'
     },
     {
       rank: 5,
@@ -137,7 +133,7 @@
           ]
         },
         {
-          label: '持ったとき',
+          label: '着用イメージ',
           alt: 'OPAQUE.CLIP C71-14002 ベージュ 着用イメージ',
           sources: [
             'https://sc3.locondo.jp/contents/commodity_image/OP/OP1488AW055368_1_l.jpg',
@@ -145,9 +141,8 @@
           ]
         }
       ],
-      reason: '現行より50g軽量。ベージュ合皮とゴールド金具で通勤向けですが、フロントベルトの装飾感が今のバッグより強めです。',
-      good: 'A4対応、肩掛け可能、マチ11cm。きれいめで仕事用として使いやすいサイズ感です。',
-      concern: '妻の「高いのに可愛くないのは嫌」という条件では、装飾の好みが合うかが最重要です。'
+      good: '440g / A4 / マチ11cm / 肩掛け。',
+      concern: 'フロントベルトで装飾感あり。'
     },
     {
       rank: 6,
@@ -168,7 +163,7 @@
           ]
         },
         {
-          label: '持ったとき',
+          label: '着用イメージ',
           alt: 'index C59-17010 着用イメージ',
           sources: [
             'https://store.world.co.jp/img/item/BRC59/BRC5926F0001/BRC5926F0001_l2_c103.jpg',
@@ -176,9 +171,8 @@
           ]
         }
       ],
-      reason: '追加希望の約300g枠。現行より190g軽く、今回の候補で最軽量。フロントのビジューが妻の「かわいい」に合えば非常に有力です。',
-      good: 'A4対応、約300g、持ち手上がり27cm。軽量合皮で、見た目に華やかさがあります。',
-      concern: 'マチ8.5cmで今回候補では浅め。弁当（横17×奥行11cm）は向きを含め、実物または内寸で確認したい候補です。'
+      good: '300g / A4 / 持ち手上がり27cm。',
+      concern: 'マチ8.5cm。弁当（奥行11cm）は要確認。'
     }
   ];
 
@@ -200,7 +194,7 @@
         <button class="product-main-button" type="button" aria-label="画像を拡大表示">
           <img class="product-main-image" src="${first.sources[0]}" alt="${first.alt}" referrerpolicy="no-referrer">
         </button>
-        <div class="image-fallback">画像を表示できません。下の「商品ページを見る」から確認してください。</div>
+        <div class="image-fallback">画像を表示できません。「商品ページを見る」から確認してください。</div>
       </div>
       <div class="thumb-rail" aria-label="画像を切り替える"></div>`;
   }
@@ -209,8 +203,8 @@
     return `
       <div class="metric-grid">
         <div class="metric"><strong class="metric-value">${item.weight}g</strong><span class="metric-label">単体重量</span><span class="metric-sub">${diffText(item.weight)}</span></div>
-        <div class="metric"><strong class="metric-value">${totalKg(item.weight)}</strong><span class="metric-label">推定通勤総重量</span><span class="metric-sub">固定荷物2,147g</span></div>
-        <div class="metric"><strong class="metric-value">${loadIndex(item.weight)}</strong><span class="metric-label">推定体感負荷</span><span class="metric-sub">現行＝100</span></div>
+        <div class="metric"><strong class="metric-value">${totalKg(item.weight)}</strong><span class="metric-label">通勤総重量</span><span class="metric-sub">荷物2,147g</span></div>
+        <div class="metric"><strong class="metric-value">${loadIndex(item.weight)}</strong><span class="metric-label">体感負荷</span><span class="metric-sub">現行＝100</span></div>
       </div>`;
   }
 
@@ -220,18 +214,16 @@
         ${mediaMarkup(item)}
         <div class="product-body">
           <div class="rank-row">
-            <span class="rank ${baselineMode ? 'baseline-rank' : ''}">${baselineMode ? '基準 / 本命色あり' : `#${item.rank}`}</span>
-            <span class="small-note">型番ごとに表示</span>
+            <span class="rank ${baselineMode ? 'baseline-rank' : ''}">${baselineMode ? '基準' : `#${item.rank}`}</span>
           </div>
           <p class="product-kicker">${item.brand}</p>
           <h3 class="product-title">${item.title}</h3>
-          <p class="product-code">型番 <strong>${item.code}</strong></p>
+          <p class="product-code">${item.code}</p>
           <p class="variant-name">${item.color}</p>
           ${metricsMarkup(item)}
-          <p class="reason"><strong>${baselineMode ? 'この型番を基準にする理由' : 'この順位の理由'}</strong><br>${item.reason}</p>
           <div class="pros-cons">
-            <div class="note-row good"><span class="note-label">良い点</span><p>${item.good}</p></div>
-            <div class="note-row concern"><span class="note-label">気になる点</span><p>${item.concern}</p></div>
+            <div class="note-row good"><span class="note-label">特徴</span><p>${item.good}</p></div>
+            <div class="note-row concern"><span class="note-label">確認</span><p>${item.concern}</p></div>
           </div>
           <a class="product-link" href="${item.url}" target="_blank" rel="noopener noreferrer">商品ページを見る</a>
         </div>
@@ -268,8 +260,7 @@
         b.type = 'button';
         b.setAttribute('aria-current', index === 0 ? 'true' : 'false');
         b.setAttribute('aria-label', `${view.label}を表示`);
-        b.title = view.label;
-        b.innerHTML = `<img src="${view.sources[0]}" alt="" referrerpolicy="no-referrer" loading="lazy"><span class="thumb-label">${view.label}</span>`;
+        b.innerHTML = `<img src="${view.sources[0]}" alt="" referrerpolicy="no-referrer" loading="lazy">`;
         b.addEventListener('click', () => {
           setImageWithFallback(main, media, view);
           rail.querySelectorAll('.thumb').forEach(x => x.setAttribute('aria-current', x === b ? 'true' : 'false'));
@@ -307,8 +298,8 @@
     const rows = chartData();
     const maxLoad = Math.max(...rows.map(x => x.load));
     const maxTotal = Math.max(...rows.map(x => x.total));
-    document.getElementById('loadChart').innerHTML = `<h3 class="chart-title">推定体感負荷</h3><p class="chart-caption">小さいほど軽い。現在使用中＝100</p>${rows.map(x => bar(x, x.load, maxLoad, String(x.load))).join('')}`;
-    document.getElementById('weightChart').innerHTML = `<h3 class="chart-title">推定通勤総重量</h3><p class="chart-caption">同じ荷物を入れた場合のバッグ込み重量</p>${rows.map(x => bar(x, x.total, maxTotal, `${(x.total/1000).toFixed(2)}kg`)).join('')}`;
+    document.getElementById('loadChart').innerHTML = `<h3 class="chart-title">体感負荷</h3><p class="chart-caption">小さいほど軽い</p>${rows.map(x => bar(x, x.load, maxLoad, String(x.load))).join('')}`;
+    document.getElementById('weightChart').innerHTML = `<h3 class="chart-title">通勤総重量</h3><p class="chart-caption">同じ荷物を入れた場合</p>${rows.map(x => bar(x, x.total, maxTotal, `${(x.total/1000).toFixed(2)}kg`)).join('')}`;
     requestAnimationFrame(() => document.querySelectorAll('.bar-fill').forEach(el => el.style.width = el.dataset.width));
   }
 
@@ -324,13 +315,19 @@
     lightbox.hidden = false;
     document.body.classList.add('lightbox-open');
   }
+
   function closeLightbox() {
     lightbox.hidden = true;
     document.body.classList.remove('lightbox-open');
   }
+
   document.querySelector('.lightbox-close')?.addEventListener('click', closeLightbox);
-  lightbox?.addEventListener('click', e => { if (e.target === lightbox || e.target.classList.contains('lightbox-stage')) closeLightbox(); });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !lightbox.hidden) closeLightbox(); });
+  lightbox?.addEventListener('click', e => {
+    if (e.target === lightbox || e.target.classList.contains('lightbox-stage')) closeLightbox();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !lightbox.hidden) closeLightbox();
+  });
 
   const stage = lightbox?.querySelector('.lightbox-stage');
   stage?.addEventListener('touchstart', e => {
@@ -339,9 +336,11 @@
       startDistance = Math.hypot(a.clientX-b.clientX, a.clientY-b.clientY);
       startScale = scale;
     } else if (e.touches.length === 1) {
-      lastX = e.touches[0].clientX; lastY = e.touches[0].clientY;
+      lastX = e.touches[0].clientX;
+      lastY = e.touches[0].clientY;
     }
   }, {passive:true});
+
   stage?.addEventListener('touchmove', e => {
     if (e.touches.length === 2) {
       const [a,b] = e.touches;
@@ -351,7 +350,11 @@
       applyTransform();
     } else if (e.touches.length === 1 && scale > 1) {
       const t = e.touches[0];
-      x += t.clientX-lastX; y += t.clientY-lastY; lastX=t.clientX; lastY=t.clientY; applyTransform();
+      x += t.clientX-lastX;
+      y += t.clientY-lastY;
+      lastX = t.clientX;
+      lastY = t.clientY;
+      applyTransform();
     }
   }, {passive:true});
 
