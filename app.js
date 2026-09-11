@@ -5,26 +5,41 @@
   const CURRENT_BAG_G = 490;
   const CURRENT_TOTAL_G = FIXED_LOAD_G + CURRENT_BAG_G;
 
-  const baseline = {
-    id: 'current-black',
-    brand: 'OPAQUE.CLIP',
-    title: '9ポケット トートバッグ',
-    code: 'C71-16003',
-    color: 'Black / 現在使用中',
-    weight: 490,
-    url: 'https://wear.jp/item/66671652/',
-    images: [
-      ['https://c.imgz.jp/228/71141228/71141228b_8_d_500.jpg', '現在使用中のOPAQUE.CLIP 9ポケットトート ブラック']
-    ],
-    reason: '今の使い勝手と見た目の基準。容量とマチ15cmは十分ですが、持ち手の劣化をきっかけに買い替えを検討。',
-    good: 'A4対応、マチ15cm、9ポケット。弁当を含む現在の通勤荷物が問題なく入る。',
-    concern: '単体約490g。今回の「少し軽くする」比較では基準重量になります。'
-  };
-
-  const candidates = [
+  const models = [
     {
       rank: 1,
-      id: 'opaque-15002',
+      id: 'c71-16003',
+      baseline: true,
+      brand: 'OPAQUE.CLIP',
+      title: '9ポケット トートバッグ',
+      code: 'C71-16003',
+      color: 'Black（現在使用中） / Beige（本命色）',
+      weight: 490,
+      url: 'https://wear.jp/item/66671652/',
+      images: [
+        {
+          label: '単品｜ベージュ',
+          alt: 'OPAQUE.CLIP C71-16003 ベージュ 単品写真',
+          sources: ['https://c.imgz.jp/228/71141228/71141228b_14_d_500.jpg']
+        },
+        {
+          label: '持ったとき',
+          alt: 'OPAQUE.CLIP C71-16003 着用イメージ',
+          sources: ['https://images.wear2.jp/coordinate/Grigl5lv/gOgdabfF/1691473894_276.jpg']
+        },
+        {
+          label: '現在｜ブラック',
+          alt: 'OPAQUE.CLIP C71-16003 ブラック 単品写真',
+          sources: ['https://c.imgz.jp/228/71141228/71141228b_8_d_500.jpg']
+        }
+      ],
+      reason: '妻の第一希望。「今のバッグのベージュ版が良い」が明確なので、型番単位では最優先。軽量化はしませんが、見た目と使い勝手の失敗リスクが最も低い候補です。',
+      good: 'A4対応、マチ15cm、9ポケット。今と同じ収納・取り回しを維持したまま色だけ変えられます。',
+      concern: '重量は今と同じ約490g。軽量化を目的にするなら他型番が有利です。'
+    },
+    {
+      rank: 2,
+      id: 'c71-15002',
       brand: 'OPAQUE.CLIP',
       title: 'フェイクレザーA4サイズトートバッグ',
       code: 'C71-15002',
@@ -32,76 +47,143 @@
       weight: 430,
       url: 'https://wear.jp/item/62570083/',
       images: [
-        ['https://c.imgz.jp/436/67358436/67358436_b_22_500.jpg', 'OPAQUE.CLIP C71-15002 ベージュ 商品画像'],
-        ['https://c.imgz.jp/436/67358436/67358436_14_d_500.jpg', 'OPAQUE.CLIP C71-15002 ベージュ 着用イメージ']
+        {
+          label: '単品',
+          alt: 'OPAQUE.CLIP C71-15002 ベージュ 単品写真',
+          sources: ['https://c.imgz.jp/436/67358436/67358436_b_22_500.jpg']
+        },
+        {
+          label: '持ったとき',
+          alt: 'OPAQUE.CLIP C71-15002 ベージュ 着用イメージ',
+          sources: ['https://c.imgz.jp/436/67358436/67358436_14_d_500.jpg']
+        }
       ],
-      reason: '今のバッグに近い、シンプルなシュリンク合皮トート。見た目を大きく変えずに60g軽くできるため、最初に見せたい候補です。',
-      good: 'A4対応、肩掛け可能、マチ12cm。中央ファスナーと内ポケット4つがあり、通勤用途にも合わせやすい。',
-      concern: '旧モデルのため、気に入った場合は新品在庫・中古・後継品を探す必要があります。'
+      reason: '今のバッグに近い柔らかなシュリンク合皮トートで、現行より60g軽量。見た目を大きく変えずに少し軽くしたい条件に素直に合います。',
+      good: 'A4対応、肩掛け可能、マチ12cm。中央ファスナー＋内ポケット4つで、通勤用途との相性が良好。',
+      concern: '旧モデルのため、気に入った場合は新品在庫・中古・後継品を探す前提です。'
     },
     {
-      rank: 2,
-      id: 'opaque-19033',
+      rank: 3,
+      id: 'c71-19033',
       brand: 'OPAQUE.CLIP',
       title: 'シュリンク合皮3層トートバッグ',
       code: 'C71-19033',
       color: 'Beige (052)',
       weight: 400,
-      url: 'https://voi.0101.co.jp/voi/wsg/wrt-5_mcd-CE016_cpg-746_pno-11_ino-01.html',
-      images: [],
-      reason: '今のバッグと同じシュリンク合皮系で、約90g軽量。マチ13.5cmを残しているため、弁当の収まりと軽さのバランスが良好です。',
-      good: 'A4対応、肩掛け可能、3層構造。表面の凹凸でキズが目立ちにくく、通勤向けの上品なデザイン。',
-      concern: '掲載ページではベージュ展開を確認済み。色違い画像の混在を避けるため、このページでは画像を無理に転載せずリンク先で確認できるようにしています。'
+      url: 'https://wear.jp/item/81214168/',
+      images: [
+        {
+          label: '単品',
+          alt: 'OPAQUE.CLIP C71-19033 ベージュ 単品写真',
+          sources: ['https://c.imgz.jp/538/86692538/86692538_2_d_500.jpg']
+        },
+        {
+          label: '持ったとき',
+          alt: 'OPAQUE.CLIP C71-19033 着用イメージ',
+          sources: ['https://images.wear2.jp/coordinate/7qxo0t/20250131161559329/20250131161559329_276.jpg']
+        }
+      ],
+      reason: '現行より90g軽く、A4対応とマチ13.5cmを確保。軽量化と通勤バッグらしい上品さのバランスが良い候補です。',
+      good: '3層構造で仕分けしやすく、持ち手上がり27cmで肩掛けしやすい設計です。',
+      concern: '今のバッグより横幅がやや広め。実際に肩に掛けたときの見え方は確認したいところです。'
     },
     {
-      rank: 3,
-      id: 'shoo-box',
+      rank: 4,
+      id: 'c70-07026',
       brand: 'SHOO・LA・RUE',
       title: 'ふわっと軽いボックストートバッグ',
       code: 'C70-07026',
       color: 'Beige (052)',
       weight: 390,
       url: 'https://store.world.co.jp/brand/shoo-la-rue/item/BRC7026F0081?clr_id=102',
-      images: [],
-      reason: '今回の本命候補では最軽量。今より100g軽く、マチ11.5cmとA4収納を確保しています。現在販売ページが確認しやすいのも利点です。',
-      good: '約390g、A4対応、持ち手上がり27.5cm。前後の収納スペースがあり、仕事用として実用的。',
-      concern: '今のバッグよりボックス感が強いため、見た目の好みは実物写真を見て判断したい候補です。'
-    },
-    {
-      rank: 4,
-      id: 'current-beige',
-      brand: 'OPAQUE.CLIP',
-      title: '9ポケット トートバッグ',
-      code: 'C71-16003',
-      color: 'Beige',
-      weight: 490,
-      url: 'https://wear.jp/item/66671652/',
       images: [
-        ['https://c.imgz.jp/228/71141228/71141228b_14_d_500.jpg', 'OPAQUE.CLIP C71-16003 ベージュ イメージ']
+        {
+          label: '単品',
+          alt: 'SHOO・LA・RUE C70-07026 ベージュ 単品写真',
+          sources: [
+            'https://store.world.co.jp/img/item/BRC70/BRC7026F0081/BRC7026F0081_l1_c102.jpg',
+            'https://z-shopping.c.yimg.jp/307/110991307/110991307_b_01_500.jpg'
+          ]
+        },
+        {
+          label: '持ったとき',
+          alt: 'SHOO・LA・RUE C70-07026 ベージュ 着用イメージ',
+          sources: [
+            'https://store.world.co.jp/img/item/BRC70/BRC7026F0081/BRC7026F0081_l2_c102.jpg',
+            'https://z-shopping.c.yimg.jp/307/110991307/110991307_14_d_500.jpg'
+          ]
+        }
       ],
-      reason: '「これが良い」という好みがすでに確認できている安全候補。軽量化はできませんが、デザイン満足度を最優先するなら十分合理的です。',
-      good: '今と同じ収納力・使い勝手をそのまま維持。色だけベージュに変えられるため、買い替え後の違和感が最も少ない。',
-      concern: '重量は今と同じ約490g。軽さを改善する目的には寄与しません。'
+      reason: '現行より100g軽量で、A4・マチ11.5cm・肩掛けを確保。価格も比較的抑えめで、軽さと実用性を優先するなら強い候補です。',
+      good: '約390g、持ち手上がり27.5cm。メイン収納の前後にも収納部があり仕事用に使いやすい構成です。',
+      concern: '今のバッグよりボックス感が強く、かわいさの方向が合うかは画像での確認が重要です。'
     },
     {
       rank: 5,
-      id: 'opaque-frontbelt',
+      id: 'c71-14002',
       brand: 'OPAQUE.CLIP',
       title: 'フロントベルトデザイントートバッグ',
       code: 'C71-14002',
       color: 'Beige (052)',
       weight: 440,
-      url: 'https://store.world.co.jp/brand/opaque-clip/item/BRC7125F0002?clr_id=102',
+      url: 'https://store.world.co.jp/brand/opaque-clip/item/BRC7125F0002',
       images: [
-        ['https://store.world.co.jp/img/item/BRC71/BRC7125F0002/BRC7125F0002_l1_a009.jpg', 'OPAQUE.CLIP C71-14002 ベージュ 商品画像'],
-        ['https://sc3.locondo.jp/contents/commodity_image/OP/OP1488AW055368_1_l.jpg', 'OPAQUE.CLIP C71-14002 ベージュ 着用イメージ']
+        {
+          label: '単品',
+          alt: 'OPAQUE.CLIP C71-14002 ベージュ 単品写真',
+          sources: [
+            'https://store.world.co.jp/img/item/BRC71/BRC7125F0002/BRC7125F0002_l1_a009.jpg',
+            'https://sc3.locondo.jp/contents/commodity_image/OP/OP1488AW055368_6_l.jpg'
+          ]
+        },
+        {
+          label: '持ったとき',
+          alt: 'OPAQUE.CLIP C71-14002 ベージュ 着用イメージ',
+          sources: [
+            'https://sc3.locondo.jp/contents/commodity_image/OP/OP1488AW055368_1_l.jpg',
+            'https://store.world.co.jp/img/item/BRC71/BRC7125F0002/BRC7125F0002_l2_a009.jpg'
+          ]
+        }
       ],
-      reason: '約50g軽く、ベージュのシュリンク合皮とゴールド金具で通勤向け。ただしフロントベルトがある分、今のバッグより装飾感があります。',
-      good: 'A4対応、肩掛け可能、3層構造。高さ30cm・マチ11cmで通勤荷物をまとめやすい。',
-      concern: '見た目が今のバッグより少しシャープ。かわいさの方向が合うかを画像で確認したい候補です。'
+      reason: '現行より50g軽量。ベージュ合皮とゴールド金具で通勤向けですが、フロントベルトの装飾感が今のバッグより強めです。',
+      good: 'A4対応、肩掛け可能、マチ11cm。きれいめで仕事用として使いやすいサイズ感です。',
+      concern: '妻の「高いのに可愛くないのは嫌」という条件では、装飾の好みが合うかが最重要です。'
+    },
+    {
+      rank: 6,
+      id: 'c59-17010',
+      brand: 'index',
+      title: 'ビジュー付きA4トートバッグ',
+      code: 'C59-17010',
+      color: 'Beige (052)',
+      weight: 300,
+      url: 'https://store.world.co.jp/brand/index/item/BRC5926F0001?clr_id=102',
+      images: [
+        {
+          label: '単品',
+          alt: 'index C59-17010 ベージュ 単品写真',
+          sources: [
+            'https://store.world.co.jp/img/item/BRC59/BRC5926F0001/BRC5926F0001_l1_c103.jpg',
+            'https://store.world.co.jp/img/item/BRC59/BRC5926F0001/BRC5926F0001_l1_c101.jpg'
+          ]
+        },
+        {
+          label: '持ったとき',
+          alt: 'index C59-17010 着用イメージ',
+          sources: [
+            'https://store.world.co.jp/img/item/BRC59/BRC5926F0001/BRC5926F0001_l2_c103.jpg',
+            'https://store.world.co.jp/img/item/BRC59/BRC5926F0001/BRC5926F0001_l1_c101.jpg'
+          ]
+        }
+      ],
+      reason: '追加希望の約300g枠。現行より190g軽く、今回の候補で最軽量。フロントのビジューが妻の「かわいい」に合えば非常に有力です。',
+      good: 'A4対応、約300g、持ち手上がり27cm。軽量合皮で、見た目に華やかさがあります。',
+      concern: 'マチ8.5cmで今回候補では浅め。弁当（横17×奥行11cm）は向きを含め、実物または内寸で確認したい候補です。'
     }
   ];
 
+  const baseline = models[0];
+  const candidates = models.slice(1);
   const totalWeight = weight => FIXED_LOAD_G + weight;
   const totalKg = weight => `${(totalWeight(weight) / 1000).toFixed(2)}kg`;
   const loadIndex = weight => Math.round(totalWeight(weight) / CURRENT_TOTAL_G * 100);
@@ -112,24 +194,15 @@
   };
 
   function mediaMarkup(item) {
-    if (!item.images.length) {
-      return `
-        <div class="product-media is-placeholder">
-          <div class="placeholder-inner">
-            <div class="placeholder-swatch" aria-hidden="true"></div>
-            <strong>${item.color}</strong>
-            <p>指定色と異なる写真を載せないため、画像はリンク先の商品ページで確認してください。</p>
-          </div>
-        </div>`;
-    }
-    const [src, alt] = item.images[0];
+    const first = item.images[0];
     return `
       <div class="product-media">
         <button class="product-main-button" type="button" aria-label="画像を拡大表示">
-          <img class="product-main-image" src="${src}" alt="${alt}" referrerpolicy="no-referrer">
+          <img class="product-main-image" src="${first.sources[0]}" alt="${first.alt}" referrerpolicy="no-referrer">
         </button>
+        <div class="image-fallback">画像を表示できません。下の「商品ページを見る」から確認してください。</div>
       </div>
-      ${item.images.length > 1 ? '<div class="thumb-rail" aria-label="画像を切り替える"></div>' : ''}`;
+      <div class="thumb-rail" aria-label="画像を切り替える"></div>`;
   }
 
   function metricsMarkup(item) {
@@ -147,15 +220,15 @@
         ${mediaMarkup(item)}
         <div class="product-body">
           <div class="rank-row">
-            <span class="rank ${baselineMode ? 'baseline-rank' : ''}">${baselineMode ? '基準' : `#${item.rank}`}</span>
-            <span class="small-note">肩掛けトートとして比較</span>
+            <span class="rank ${baselineMode ? 'baseline-rank' : ''}">${baselineMode ? '基準 / 本命色あり' : `#${item.rank}`}</span>
+            <span class="small-note">型番ごとに表示</span>
           </div>
           <p class="product-kicker">${item.brand}</p>
           <h3 class="product-title">${item.title}</h3>
-          <p class="product-code">型番 ${item.code}</p>
-          <p class="color-name">${item.color}</p>
+          <p class="product-code">型番 <strong>${item.code}</strong></p>
+          <p class="variant-name">${item.color}</p>
           ${metricsMarkup(item)}
-          <p class="reason"><strong>${baselineMode ? '基準にする理由' : 'この順位の理由'}</strong><br>${item.reason}</p>
+          <p class="reason"><strong>${baselineMode ? 'この型番を基準にする理由' : 'この順位の理由'}</strong><br>${item.reason}</p>
           <div class="pros-cons">
             <div class="note-row good"><span class="note-label">良い点</span><p>${item.good}</p></div>
             <div class="note-row concern"><span class="note-label">気になる点</span><p>${item.concern}</p></div>
@@ -165,33 +238,47 @@
       </article>`;
   }
 
+  function setImageWithFallback(img, media, view) {
+    let index = 0;
+    const tryNext = () => {
+      if (index >= view.sources.length) {
+        media.classList.add('is-error');
+        return;
+      }
+      img.src = view.sources[index++];
+      img.alt = view.alt;
+    };
+    img.onerror = tryNext;
+    img.onload = () => media.classList.remove('is-error');
+    tryNext();
+  }
+
   function setupGalleries(root) {
     root.querySelectorAll('.product-card').forEach(card => {
-      const id = card.dataset.id;
-      const item = id === baseline.id ? baseline : candidates.find(x => x.id === id);
-      if (!item || item.images.length === 0) return;
+      const item = models.find(x => x.id === card.dataset.id);
+      if (!item) return;
       const main = card.querySelector('.product-main-image');
       const media = card.querySelector('.product-media');
-      main.addEventListener('error', () => {
-        media.classList.add('is-placeholder');
-        media.innerHTML = `<div class="placeholder-inner"><div class="placeholder-swatch"></div><strong>${item.color}</strong><p>画像を表示できません。商品ページから確認してください。</p></div>`;
-      });
-      card.querySelector('.product-main-button')?.addEventListener('click', () => openLightbox(main.src, main.alt));
       const rail = card.querySelector('.thumb-rail');
-      if (!rail) return;
-      item.images.forEach(([src, alt], index) => {
+      rail.innerHTML = '';
+
+      item.images.forEach((view, index) => {
         const b = document.createElement('button');
         b.className = 'thumb';
         b.type = 'button';
         b.setAttribute('aria-current', index === 0 ? 'true' : 'false');
-        b.setAttribute('aria-label', `${index + 1}枚目を表示`);
-        b.innerHTML = `<img src="${src}" alt="" referrerpolicy="no-referrer" loading="lazy">`;
+        b.setAttribute('aria-label', `${view.label}を表示`);
+        b.title = view.label;
+        b.innerHTML = `<img src="${view.sources[0]}" alt="" referrerpolicy="no-referrer" loading="lazy"><span class="thumb-label">${view.label}</span>`;
         b.addEventListener('click', () => {
-          main.src = src; main.alt = alt;
+          setImageWithFallback(main, media, view);
           rail.querySelectorAll('.thumb').forEach(x => x.setAttribute('aria-current', x === b ? 'true' : 'false'));
         });
         rail.appendChild(b);
       });
+
+      setImageWithFallback(main, media, item.images[0]);
+      card.querySelector('.product-main-button')?.addEventListener('click', () => openLightbox(main.src, main.alt));
     });
   }
 
@@ -203,13 +290,17 @@
   }
 
   function chartData() {
-    return [baseline, ...candidates].map(item => ({
-      label: item.id === baseline.id ? '現在使用中' : `#${item.rank} ${item.code}`,
+    return models.map(item => ({
+      label: item.baseline ? `${item.code} 現在` : `#${item.rank} ${item.code}`,
       weight: item.weight,
       total: totalWeight(item.weight),
       load: loadIndex(item.weight),
-      current: item.id === baseline.id
+      current: item.baseline
     })).sort((a, b) => a.load - b.load || a.weight - b.weight);
+  }
+
+  function bar(item, value, max, display) {
+    return `<div class="bar-row ${item.current ? 'is-current' : ''}"><div class="bar-meta"><span class="bar-label">${item.label}</span><strong class="bar-value">${display}</strong></div><div class="bar-track"><div class="bar-fill" data-width="${Math.max(8, value / max * 100).toFixed(1)}%"></div></div></div>`;
   }
 
   function renderCharts() {
@@ -221,34 +312,48 @@
     requestAnimationFrame(() => document.querySelectorAll('.bar-fill').forEach(el => el.style.width = el.dataset.width));
   }
 
-  function bar(item, value, max, text) {
-    const width = Math.max(8, value / max * 100).toFixed(1) + '%';
-    return `<div class="bar-row${item.current ? ' is-current' : ''}"><div class="bar-meta"><span class="bar-label">${item.label}</span><strong class="bar-value">${text}</strong></div><div class="bar-track"><div class="bar-fill" data-width="${width}"></div></div></div>`;
-  }
-
   const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightboxImage');
-  const stage = lightbox.querySelector('.lightbox-stage');
-  let scale = 1, tx = 0, ty = 0, startDistance = 0, startScale = 1, startMid = null, startTranslate = null;
-  const apply = () => lightboxImg.style.transform = `translate3d(${tx}px,${ty}px,0) scale(${scale})`;
-  const reset = () => { scale = 1; tx = 0; ty = 0; startDistance = 0; startMid = null; startTranslate = null; apply(); };
-  function openLightbox(src, alt) { lightboxImg.src = src; lightboxImg.alt = alt || '商品画像'; lightbox.hidden = false; document.body.classList.add('lightbox-open'); reset(); }
-  function closeLightbox() { lightbox.hidden = true; lightboxImg.removeAttribute('src'); document.body.classList.remove('lightbox-open'); reset(); }
-  lightbox.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+  const lightboxImage = document.getElementById('lightboxImage');
+  let scale = 1, x = 0, y = 0, startDistance = 0, startScale = 1, lastX = 0, lastY = 0;
+  const applyTransform = () => { lightboxImage.style.transform = `translate(${x}px, ${y}px) scale(${scale})`; };
+
+  function openLightbox(src, alt) {
+    lightboxImage.src = src;
+    lightboxImage.alt = alt || '';
+    scale = 1; x = 0; y = 0; applyTransform();
+    lightbox.hidden = false;
+    document.body.classList.add('lightbox-open');
+  }
+  function closeLightbox() {
+    lightbox.hidden = true;
+    document.body.classList.remove('lightbox-open');
+  }
+  document.querySelector('.lightbox-close')?.addEventListener('click', closeLightbox);
+  lightbox?.addEventListener('click', e => { if (e.target === lightbox || e.target.classList.contains('lightbox-stage')) closeLightbox(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && !lightbox.hidden) closeLightbox(); });
-  stage.addEventListener('click', e => { if (e.target === stage && scale === 1) closeLightbox(); });
-  const dist = (a,b) => Math.hypot(b.clientX-a.clientX,b.clientY-a.clientY);
-  const mid = (a,b) => ({x:(a.clientX+b.clientX)/2,y:(a.clientY+b.clientY)/2});
-  stage.addEventListener('touchstart', e => {
-    if (e.touches.length === 2) { e.preventDefault(); startDistance = dist(e.touches[0],e.touches[1]); startScale = scale; startMid = mid(e.touches[0],e.touches[1]); startTranslate = {x:tx,y:ty}; }
-    else if (e.touches.length === 1 && scale > 1) { startMid={x:e.touches[0].clientX,y:e.touches[0].clientY}; startTranslate={x:tx,y:ty}; }
-  }, {passive:false});
-  stage.addEventListener('touchmove', e => {
-    if (e.touches.length === 2 && startDistance) { e.preventDefault(); scale=Math.min(4,Math.max(1,startScale*dist(e.touches[0],e.touches[1])/startDistance)); const m=mid(e.touches[0],e.touches[1]); tx=startTranslate.x+m.x-startMid.x; ty=startTranslate.y+m.y-startMid.y; if(scale===1){tx=0;ty=0;} apply(); }
-    else if (e.touches.length===1 && scale>1 && startMid) { e.preventDefault(); tx=startTranslate.x+e.touches[0].clientX-startMid.x; ty=startTranslate.y+e.touches[0].clientY-startMid.y; apply(); }
-  }, {passive:false});
-  stage.addEventListener('touchend', e => { if(e.touches.length<2) startDistance=0; if(e.touches.length===0){startMid=null;startTranslate=null;} });
-  stage.addEventListener('dblclick', () => { if(scale>1) reset(); else {scale=2;apply();} });
+
+  const stage = lightbox?.querySelector('.lightbox-stage');
+  stage?.addEventListener('touchstart', e => {
+    if (e.touches.length === 2) {
+      const [a,b] = e.touches;
+      startDistance = Math.hypot(a.clientX-b.clientX, a.clientY-b.clientY);
+      startScale = scale;
+    } else if (e.touches.length === 1) {
+      lastX = e.touches[0].clientX; lastY = e.touches[0].clientY;
+    }
+  }, {passive:true});
+  stage?.addEventListener('touchmove', e => {
+    if (e.touches.length === 2) {
+      const [a,b] = e.touches;
+      const d = Math.hypot(a.clientX-b.clientX, a.clientY-b.clientY);
+      scale = Math.min(4, Math.max(1, startScale * d / startDistance));
+      if (scale === 1) { x = 0; y = 0; }
+      applyTransform();
+    } else if (e.touches.length === 1 && scale > 1) {
+      const t = e.touches[0];
+      x += t.clientX-lastX; y += t.clientY-lastY; lastX=t.clientX; lastY=t.clientY; applyTransform();
+    }
+  }, {passive:true});
 
   render();
 })();
