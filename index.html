@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes, viewport-fit=cover">
+  <meta name="theme-color" content="#f5f0e8">
+  <meta name="description" content="今使っているバッグの雰囲気を大きく変えず、少し軽くできるベージュ系通勤トートを比較するデジタルカタログ。">
+  <title>かわいいまま、少し軽く。通勤バッグ候補</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="hero shell">
+    <p class="eyebrow">COMMUTE TOTE CATALOG</p>
+    <h1>かわいいまま、<br>少し軽く。</h1>
+    <p class="lead">今のバッグの雰囲気を大きく変えずに、ベージュ系・肩掛け・A4対応を中心に比較。<br>価格ではなく、見た目と毎日の持ちやすさを優先して候補を絞りました。</p>
+    <div class="hero-chips" aria-label="選定条件">
+      <span>ベージュ系</span><span>肩掛け</span><span>A4</span><span>弁当が入るマチ</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="baseline shell" aria-labelledby="baseline-title">
+      <div class="section-heading">
+        <p class="eyebrow">BASELINE</p>
+        <h2 id="baseline-title">今使っているバッグ</h2>
+        <p>このバッグを「体感負荷100」の基準にします。</p>
+      </div>
+      <div id="baselineCard"></div>
+    </section>
+
+    <section class="candidates shell" aria-labelledby="candidate-title">
+      <div class="section-heading">
+        <p class="eyebrow">RECOMMEND</p>
+        <h2 id="candidate-title">おすすめ順</h2>
+        <p>今のバッグに近い雰囲気、軽さ、通勤での使いやすさを合わせて並べています。</p>
+      </div>
+      <div id="candidateList" class="card-list"></div>
+    </section>
+
+    <section class="comparison" aria-labelledby="comparison-title">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">SUMMARY</p>
+          <h2 id="comparison-title">最後に、数字で比較</h2>
+          <p>体感負荷が軽い順。候補はすべて肩掛けトートなので、今回は通勤総重量の差をそのまま比較します。</p>
+        </div>
+        <div id="loadChart" class="chart-card"></div>
+        <div id="weightChart" class="chart-card"></div>
+      </div>
+    </section>
+
+    <section class="method shell">
+      <details>
+        <summary>体感負荷の考え方</summary>
+        <div class="method-body">
+          <p><strong>推定体感負荷</strong>は、現在使用中のバッグを100とした相対指数です。今回の候補はすべて肩掛けトートとして比較するため、ストラップ形状による補正は加えていません。</p>
+          <p>固定荷物を2,147g（弁当687g、水筒850g、財布・ポーチ等610g）とし、「候補の通勤総重量 ÷ 現在の通勤総重量 × 100」で算出しています。実際の体感は服装、荷物の位置、持ち手の幅などで変わります。</p>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <p>商品仕様・画像はブランド公式サイト、WORLD ONLINE STORE、WEARなどの掲載情報を参照しています。価格は比較軸にしないため掲載していません。</p>
+    <p>販売終了品を含みます。気に入ったデザインが決まった後に、在庫・中古・後継品を探す想定です。</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="商品画像を拡大表示">
+    <button class="lightbox-close" type="button" aria-label="閉じる">×</button>
+    <div class="lightbox-stage"><img id="lightboxImage" alt="" draggable="false"></div>
+    <p class="lightbox-hint">2本指で拡大できます</p>
+  </div>
+</body>
+</html>
